@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-SF-5Fy">
+                                <rect key="frame" x="144" y="173" width="60" height="30"/>
+                                <state key="normal" title="Black"/>
+                                <connections>
+                                    <action selector="blackClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2pB-VV-pyx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqu-io-8JU">
+                                <rect key="frame" x="144" y="236" width="60" height="30"/>
+                                <state key="normal" title="Magenta"/>
+                                <connections>
+                                    <action selector="magentaClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i35-uE-u1F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAS-2p-6VQ">
+                                <rect key="frame" x="144" y="288" width="60" height="30"/>
+                                <state key="normal" title="Gray"/>
+                                <connections>
+                                    <action selector="grayClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v3a-5o-Er4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY8-dP-Tfb">
+                                <rect key="frame" x="144" y="340" width="60" height="30"/>
+                                <state key="normal" title="Yellow"/>
+                                <connections>
+                                    <action selector="yellowClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5VC-58-YBY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWy-iT-vMj">
+                                <rect key="frame" x="144" y="120" width="60" height="30"/>
+                                <state key="normal" title="White"/>
+                                <connections>
+                                    <action selector="whiteClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZi-bk-FdC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8e1-SF-5Fy" firstAttribute="trailing" secondItem="mqu-io-8JU" secondAttribute="trailing" id="7u6-iF-csd"/>
+                            <constraint firstItem="HWy-iT-vMj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="AvD-1n-tUW"/>
+                            <constraint firstItem="8e1-SF-5Fy" firstAttribute="top" secondItem="HWy-iT-vMj" secondAttribute="bottom" constant="23" id="BuU-sX-stk"/>
+                            <constraint firstItem="HWy-iT-vMj" firstAttribute="leading" secondItem="8e1-SF-5Fy" secondAttribute="leading" id="CBt-kK-MMc"/>
+                            <constraint firstItem="HWy-iT-vMj" firstAttribute="trailing" secondItem="8e1-SF-5Fy" secondAttribute="trailing" id="CdC-MY-NuL"/>
+                            <constraint firstItem="8e1-SF-5Fy" firstAttribute="leading" secondItem="mqu-io-8JU" secondAttribute="leading" id="GDs-Ib-8YT"/>
+                            <constraint firstItem="JAS-2p-6VQ" firstAttribute="top" secondItem="mqu-io-8JU" secondAttribute="bottom" constant="22" id="I6K-e2-J0P"/>
+                            <constraint firstItem="mqu-io-8JU" firstAttribute="leading" secondItem="JAS-2p-6VQ" secondAttribute="leading" id="Pv5-D5-vaO"/>
+                            <constraint firstItem="mqu-io-8JU" firstAttribute="top" secondItem="8e1-SF-5Fy" secondAttribute="bottom" constant="33" id="UaW-Df-xZP"/>
+                            <constraint firstItem="JAS-2p-6VQ" firstAttribute="leading" secondItem="nY8-dP-Tfb" secondAttribute="leading" id="VDP-u7-xGR"/>
+                            <constraint firstItem="HWy-iT-vMj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="Zcu-Ss-Ucy"/>
+                            <constraint firstItem="JAS-2p-6VQ" firstAttribute="trailing" secondItem="nY8-dP-Tfb" secondAttribute="trailing" id="n4D-Uu-pwn"/>
+                            <constraint firstItem="nY8-dP-Tfb" firstAttribute="top" secondItem="JAS-2p-6VQ" secondAttribute="bottom" constant="22" id="yUm-QY-73y"/>
+                            <constraint firstItem="mqu-io-8JU" firstAttribute="trailing" secondItem="JAS-2p-6VQ" secondAttribute="trailing" id="ycE-km-mCw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="29.23538230884558"/>
+        </scene>
+    </scenes>
+</document>
